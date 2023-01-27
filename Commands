@@ -1,0 +1,50 @@
+root@vDeb-Zabbix:~# sudo systemctl enable zabbix-server apache2 # zabbix-agent
+Synchronizing state of zabbix-server.service with SysV service script with /lib/systemd/systemd-sysv-
+Executing: /lib/systemd/systemd-sysv-install enable zabbix-server
+Synchronizing state of apache2.service with SysV service script with /lib/systemd/systemd-sysv-instal
+Executing: /lib/systemd/systemd-sysv-install enable apache2
+Created symlink /etc/systemd/system/multi-user.target.wants/zabbix-server.service → /lib/systemd/syst
+root@vDeb-Zabbix:~# history
+    1  passwd
+    2  clear
+    3  sudo apt-get update
+    4  sudo apt-get install openssh-server
+    5  exit
+    6  passwd
+    7  exit
+    8  clear
+    9  wget https://repo.zabbix.com/zabbix/6.0/debian/pool/main/z/zabbix-release/zabbix-release_6.0-4
+   10  dpkg -i zabbix-release_6.0-4+debian11_all.deb
+   11  apt update
+   12  'apt list --upgradable
+   13  apt install zabbix-server-pgsql zabbix-frontend-php php7.4-pgsql zabbix-apache-conf zabbix-sql
+   14  sudo -u postgres createuser --pwprompt zabbix
+   15  su - postgres -c 'psql --command "CREATE USER zabbix WITH PASSWORD '\'123456789\'';"'
+   16  sudo apt install zabbix-server-pgsql zabbix-frontend-php php7.4-pgsql zabbix-apache-conf zabbi
+   17  zabbix-agent
+   18  sudo -u postgres createuser --pwprompt zabbix
+   19  postgres createuser --pwprompt zabbix
+   20  sudo apt install postgresql
+   21  wget https://repo.zabbix.com/zabbix/6.0/debian/pool/main/z/zabbix-release/zabbix-release_6.0-4
+   22  dpkg -i zabbix-release_6.0-4+debian11_all.deb
+   23  apt update
+   24  sudo apt install zabbix-server-pgsql zabbix-frontend-php php7.4-pgsql zabbix-apache-conf zabbi
+   25  zabbix-agent
+   26  sudo -u postgres createuser --pwprompt zabbix
+   27  sudo -u postgres createdb -O zabbix zabbix
+   28  cd /
+   29  ll
+   30  ls
+   31  cd /root
+   32  sudo -u postgres createdb -O zabbix zabbix
+   33  postgres createdb -O zabbix zabbix
+   34  sudo postgres createdb -O zabbix zabbix
+   35  su - postgres -c 'psql --command "CREATE USER zabbix WITH PASSWORD '\'123456789\'';"'
+   36  su - postgres -c 'psql --command "CREATE DATABASE zabbix OWNER zabbix;"'
+   37  zcat /usr/share/zabbix-sql-scripts/postgresql/server.sql.gz | sudo -u zabbix psql zabbix
+   38  sudo nano /etc/zabbix/zabbix_server.conf
+   39  sudo nano /etc/zabbix/zabbix_server.conf
+   40  sudo systemctl restart zabbix-server apache2 # zabbix-agent
+   41  clear
+   42  sudo systemctl enable zabbix-server apache2 # zabbix-agent
+   43  history
